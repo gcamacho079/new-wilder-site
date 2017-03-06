@@ -3,8 +3,6 @@
   - General
   - Color Scheme
   - Typography
-  - Navbar
-  - Carousel
   - Images
   - Icons
   - Lists
@@ -16,7 +14,13 @@
 ==========================================================================*/
 .wrapper {
   margin: 0 auto;
+  max-width: 750px;
   width: 85%;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 /*==========================================================================
@@ -32,24 +36,9 @@
   background-color: #29292c;
 }
 
-.carousel-inner img {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%); /* makes images black and white*/
-}
-
 .person:hover,
 .person:focus {
   border-color: #99ff99;
-}
-
-.bg-1 {
-  background-color: #241A24;
-}
-
-.bg-1 h2,
-.bg-1 h3,
-.bg-1 p {
-  color: #fff;
 }
 
 /*==========================================================================
@@ -68,12 +57,11 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  margin: 0 0 1em 0;
 }
 
 h1 {
   font-size: 2em;
+  font-weight: bold;
 }
 
 h2 {
@@ -85,41 +73,14 @@ h3 {
 }
 
 /*==========================================================================
-  Navbar
-==========================================================================*/
-   .navbar {
-     opacity: 0.9;
-     letter-spacing: 2px;
-   }
-
-   .navbar-inverse .navbar-toggle {
-     border-color: transparent;
-   }
-
-/*==========================================================================
-  Carousel
-==========================================================================*/
-
-  .carousel-inner img {
-    width: 100%;
-    margin: auto;
-  }
-
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none;
-    }
-  }
-
-
-/*==========================================================================
   Images
 ==========================================================================*/
 .person {
   border: 5px solid transparent;
-  width: 80%;
+  width: 95%;
+  max-width: 300px;
   opacity: 0.7;
-  margin: 0 auto; /* Centers the image within the column */
+  margin: 0 auto;
 }
 
 .navbar-brand img {
@@ -129,7 +90,12 @@ h3 {
 #studio-pic {
   width: 80%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 15px auto;
+}
+
+.gallery-pic {
+  width: 300px;
+  margin-bottom: 10px;
 }
 
 /*==========================================================================
@@ -139,6 +105,10 @@ h3 {
 .social-media {
   width: 2em;
   margin: 0.5em 1em;
+}
+
+.button-icon {
+  width: 1.5em;
 }
 
 
@@ -170,13 +140,4 @@ li {
 
 .thumbnail p {
     margin-top: 15px;
-}
-
-/*==========================================================================
-  Footer
-==========================================================================*/
-
-footer {
-  background-color: #241A24;
-  color: #f5f5f5;
 }
