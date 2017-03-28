@@ -12,15 +12,26 @@
 /*==========================================================================
   General
 ==========================================================================*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 750px;
   width: 85%;
 }
 
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+#main-header {
+  background-image: url("../images/Berniewithfont.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  background-attachment: fixed;
+  text-align: center;
 }
 
 /*==========================================================================
@@ -95,11 +106,17 @@ h3 {
 
 .gallery-pic {
   width: 300px;
-  margin-bottom: 10px;
+  bottom: 0;
+}
+
+.flyer {
+  width: 95%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 /*==========================================================================
-  Icons
+  Icons & Buttons
 ==========================================================================*/
 
 .social-media {
@@ -111,6 +128,9 @@ h3 {
   width: 1.5em;
 }
 
+#cta-button {
+  margin-bottom: 10px;
+}
 
 /*==========================================================================
   Lists
